@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lateef', cursive;
+}
+
+
+/* navbar & header section */
+
+
+/* 
+nav {
+    background-color: #f3e6ed;
+} */
+
+.menu {
+    text-align: left;
+    margin-right: 180px;
+}
+
+.text_section {
+    margin: 55px 55px;
+}
+
+.menu a:hover {
+    background: #f452a5;
+    transition: 0.4s;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submtenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+
+/* icons------------------------------------ */
+
+.social_icons {
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index: 2;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.social_icons a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.call {
+    background: #f452a5;
+}
+
+.whatsapp {
+    background: rgb(31, 187, 44);
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.section-workshopInfo h3 {
+    padding: 20px;
+    color: #e73792;
+    font-weight: bold;
+    text-align: center;
+}
+
+.workshopInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    background: url('../../images/graveyimages/cardgravyimg2.jpg');
+    width: auto;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* filter: blur(2px); */
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.card {
+    height: auto;
+    padding: 10px 10px;
+    margin: 40px;
+    background: #f2f3f7;
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+    border-radius: 20px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f452a5;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #f452a5;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(70px);
+    -ms-transform: translateX(70px);
+    transform: translateX(70px);
+}
+
+
+/*------ ADDED CSS ---------*/
+
+.on {
+    display: none;
+}
+
+.on,
+.off {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+input:checked+.slider .on {
+    display: block;
+}
+
+input:checked+.slider .off {
+    display: none;
+}
+
+
+/*--------- END --------*/
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

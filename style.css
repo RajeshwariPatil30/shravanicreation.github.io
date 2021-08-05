@@ -1,0 +1,376 @@
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Lateef', cursive;
+            }
+            /* navbar & header section */
+            
+            header {
+                width: auto;
+                min-height: 500px;
+                background: url('images/homebgimg4.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                /* filter: blur(2px); */
+                text-align: center;
+                font-weight: bold;
+                padding-left: 30px;
+            }
+            
+            .menu {
+                margin-right: 80px;
+            }
+            
+            .text_section {
+                margin: 55px 55px;
+            }
+            
+            .menu a:hover {
+                background: #f452a5;
+                transition: 0.4s;
+            }
+            
+            .dropdown-submenu {
+                position: relative;
+            }
+            
+            .dropdown-submtenu a::after {
+                transform: rotate(-90deg);
+                position: absolute;
+                right: 6px;
+                top: .8em;
+            }
+            
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-left: .1rem;
+                margin-right: .1rem;
+            }
+            /* icons------------------------------------ */
+            
+            .social_icons {
+                position: fixed;
+                top: 85%;
+                right: 1%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            
+            .social_icons a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin-top: 5px;
+                transition: all 0.3s ease;
+                color: white;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+            
+            .call {
+                background: #f452a5;
+            }
+            
+            .whatsapp {
+                background: rgb(31, 187, 44);
+            }
+            /* order now cards--------------------------------------- */
+            
+            .orders_card {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .orders_card .card {
+                height: 390px;
+                width: 295px;
+                padding: 60px 30px;
+                margin: 20px;
+                background: #f2f3f7;
+                box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+                border-radius: 20px;
+            }
+            
+            .orders_card .card .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .orders_card .card .content .img_box {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                position: relative;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+            
+            .orders_card .card .content .img_box img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .orders_card .card .content .content_box h5 {
+                color: #ca4088;
+            }
+            
+            .orders_card .card .content .content_box a {
+                line-height: 60px;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .orders_card .card .content .content_box a:hover {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .c-btn {
+                border: none;
+                outline: none;
+                background: #ee6caf;
+                padding: 10px;
+                box-shadow: 0.6em 0.6em 1.2em #d387ae, -0.5em -0.5em 1em #ffffff;
+                border-radius: 20px;
+            }
+            /* workshops card slider */
+            
+            #workshops {
+                background: url('images/homebgimg2.jpg');
+                width: auto;
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .workshop_card {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #workshops h3 {
+                padding: 20px;
+                color: #e73792;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            .workshop_card .box {
+                height: 375px;
+                width: 295px;
+                /* padding: 0px 0px; */
+                margin: 20px;
+                background: #f2f3f7;
+                border-radius: 20px;
+                /*  width: 300px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+            }
+            
+            .workshop_card .box .slide_img {
+                height: 200px;
+            }
+            
+            .workshop_card .box .slide_img img {
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                box-sizing: border-box;
+            }
+            
+            .workshop_card .box .card_detail {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 10px 20px;
+            }
+            
+            .workshop_card .box .card_detail .type {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .workshop_card .box .card_detail .type h5 {
+                color: #ca4088;
+                margin: 5px 0px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                padding-right: 8px;
+            }
+            
+            .workshop_card .box .card_detail .type a {
+                width: 100px;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .workshop_card .box .card_detail .type a:hover {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .carousel-indicators .active {
+                background-color: black!important;
+            }
+            
+            .carousel-indicators li {
+                width: 15px !important;
+                height: 15px !important;
+                border-radius: 50% !important;
+                background-color: #e73792 !important;
+            }
+            /* About us section style */
+            
+            #about h3 {
+                padding: 20px;
+                color: #e73792;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            .p-title {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            .p-info {
+                font-weight: 20px;
+                text-align: justify;
+            }
+            
+            .about-row {
+                justify-content: space-around;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            
+            .about-row .about-left {
+                flex-basis: 50%;
+            }
+            
+            .about-row .about-left img {
+                height: 400px;
+                padding: 50px;
+                border-radius: 51% 49% 51% 49% / 48% 49% 51% 52%;
+                background-color: #f1c6dc;
+            }
+            
+            .about-row .about-right {
+                flex-basis: 50%;
+                padding: 5px;
+            }
+            
+            .about-left {
+                padding: 30px;
+            }
+            /* contact us section */
+            
+            footer {
+                color: #ffffff;
+                background-color: #000000;
+                background-image: linear-gradient(315deg, #000000 0%, #2e2d2d 74%);
+            }
+            
+            .copyright {
+                text-align: center;
+                padding: 10px;
+                background-color: black;
+            }
+            
+            #contact {
+                padding: 10px;
+            }
+            
+            #contact h3 {
+                padding: 20px;
+                color: #e73792;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            .fade-in {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+            }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-moz-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-webkit-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-o-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-ms-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
